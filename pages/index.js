@@ -6,6 +6,7 @@ import { abi, RANDOM_GAME_NFT_CONTRACT_ADDRESS } from "../constants";
 import { FETCH_CREATED_GAME } from "../queries";
 import styles from "../styles/Home.module.css";
 import { subgraphQuery } from "../utils";
+import Link from 'next/link';
 
 export default function Home() {
   const zero = BigNumber.from("0");
@@ -336,7 +337,9 @@ export default function Home() {
       </div>
 
       <footer className={styles.footer}>
-        Made with &#10084; by Your Name
+        Made with &#10084; by&nbsp;<Link href="https://www.dionycdot.com/">
+          <a>Diony C.</a>
+        </Link>
       </footer>
     </div>
   );
